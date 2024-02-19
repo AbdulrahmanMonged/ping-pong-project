@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body class="is-flex is-justify-content-center">
+  <div class="card">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img
+          src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Placeholder image">
+      </figure>
+    </div>
+    <header class="card-header">
+      <p class="card-header-title">
+        Ping Pong Score Keeper
+      </p>
+    </header>
+    <div class="card-content">
+      <p>
+        <span class="title" id="playerOneScore">
+          0
+        </span>
+        <span class="title">
+          to
+        </span>
+        <span class="title" id="playerTwoScore">
+          0
+        </span>
+      </p>
+      <p class="subtitle">Use buttons Below to keep Score</p>
+
+      <div class="field">
+        <label class="label is-normal">Playing to</label>
+        <div class="control">
+          <div class="select is-rounded">
+            <select></select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="card-footer">
+      <button class="button is-info card-footer-item" id="scoreOne"> Player 1 Score</a>
+        <button class="button is-success card-footer-item" id="scoreTwo">Player 2 Score</a>
+          <button class="button  is-danger card-footer-item" id="reset">Reset</a>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
